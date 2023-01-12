@@ -1,0 +1,37 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "test17",
+    "email": "test17@test.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "test"
+}
+
+###
+GET http://localhost:3000/auth/is-verified
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiN2ZjYzRmYzEtZWM3Yi00ZGM5LWJjOTYtMDBiMzU5NThmMTMwIiwiaWF0IjoxNjczNTU5NzYxLCJleHAiOjE2NzM1NjA2NjF9.55bL0eAotI6OzMrWcupJy5g0TULRXUJoPDGM85u_otw
+
+###
+DELETE http://localhost:3000/auth/logout
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiN2ZjYzRmYzEtZWM3Yi00ZGM5LWJjOTYtMDBiMzU5NThmMTMwIiwiaWF0IjoxNjczNTU3MTUxLCJleHAiOjE2NzM1NTgwNTF9.1oIA8AKWv_020sD72uT72qcroZhrGTnOkTv9FAMFSuU
+
+###
+POST http://localhost:3000/auth/register/restaurant_registration_email
+Content-Type: application/json
+
+{
+    "email": "crystalcoastdiningtest@gmail.com"
+}
+
+###
+POST http://localhost:3000/auth/register/valid_token
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyeXN0YWxjb2FzdGRpbmluZ3Rlc3RAZ21haWwuY29tIiwiaWF0IjoxNjczNDcwODQwLCJleHAiOjE2NzM0NzE3NDB9.33QQ0RawJ6kepJ8JMpk_BwOHJ_YlUk4KMENtki6jSpA
